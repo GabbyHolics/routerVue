@@ -1,4 +1,6 @@
 <template>
+  <NavBar />
+  
   <img alt="Vue logo" src="./assets/logo.png">
   
     <router-view/>
@@ -6,10 +8,13 @@
 </template>
 
 <script>
-
+import { defineAsyncComponent } from 'vue'
+import NavBar from './modules/shared/components/NavBar.vue'
 export default {
   name: 'App',
-  components: {}
+  components: {
+    NavBar: defineAsyncComponent (() => import( /* webpackChunName: "PokemonPage" */'./modules/shared/components/NavBar.vue'))
+  }
 }
 </script>
 
