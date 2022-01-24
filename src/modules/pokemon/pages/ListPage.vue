@@ -1,3 +1,3 @@
 <template>
-    <h1>ListPage</h1>
+    <h1>List Page</h1>
 </template>

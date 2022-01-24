@@ -1,6 +1,4 @@
 <template>
-    <h1>
-            No Found
-    </h1>
-    <p> 4040 </p>
+    <h1>No Page Found</h1>
+    <h3>404</h3>
 </template>
